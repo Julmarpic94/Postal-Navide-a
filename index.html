@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Felicitación Navideña</title>
+	<!-- Icono en la pestaña del navegador -->
+	<link rel="icon" href="mancha.png" type="image/x-icon">
+	<link rel="shortcut icon" href="mancha.png" type="image/x-icon">
+
+	<style type="text/css">
+		body {
+			background-image: url(./fondo\ nieve.jpg);
+			background-size: cover;
+		}
+
+		@keyframes desaparece {
+			from {
+				opacity: 1;
+			}
+
+			to {
+				opacity: 0;
+			}
+		}
+
+
+
+		.abuela {
+			position: absolute;
+			top: 30%;
+			left: 43%;
+			max-width: 100%;
+			opacity: 1;
+			animation: desaparece 1s ease-out 2s forwards;
+			float: left;
+			width: 1500px;
+			height: auto;
+		}
+
+		@keyframes aparece {
+			0% {
+				opacity: 0;
+			}
+
+			to {
+				opacity: 1;
+
+			}
+		}
+
+
+		.fila1 {
+			position: relative;
+			left: 35%;
+		}
+
+		.fila1 img {
+			width: 1200px;
+			height: auto;
+		}
+
+		.mono {
+			opacity: 0;
+			animation: aparece 1s ease-in-out forwards;
+			animation-delay: 4s;
+		}
+
+		.reno {
+			opacity: 0;
+			animation: aparece 1s ease-in-out forwards;
+			animation-delay: 6s;
+		}
+
+
+
+
+		.fila2 {
+			position: relative;
+			left: 27%;
+			top 1000px;
+
+		}
+
+		.carlton {
+			width: 1000px;
+			height: auto;
+			opacity: 0;
+			animation: aparece 1s ease-in-out forwards;
+			animation-delay: 3s;
+		}
+
+		@keyframes parpadeo {
+			0% {
+				opacity: 1;
+			}
+
+			50% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+
+		@keyframes crecimiento {
+			0% {
+				opacity: 0;
+				transform: scale(0);
+			}
+
+			50% {
+				opacity: 1;
+			}
+
+			100% {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+
+		.FelizNavidad {
+			opacity: 0;
+			animation: crecimiento 1s ease-in-out forwards, parpadeo 2s infinite;
+			animation-delay: 8s;
+
+			width: 2000px;
+			height: auto;
+		}
+
+		.fila3 {
+			position: relative;
+			left: 35%;
+		}
+
+		.borracho {
+			opacity: 0;
+			animation: aparece 1s ease-in-out forwards;
+			animation-delay: 7s;
+		}
+
+		.muneco {
+			opacity: 0;
+			animation: aparece 1s ease-in-out forwards;
+			animation-delay: 5s;
+		}
+
+		.fila3 img {
+			width: 1300px;
+			height: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="centro">
+		<img class="abuela" src="./PUM.gif" alt="Hace PUM">
+	</div>
+
+	<div class="fila1">
+		<img class="mono" src="./Mono.gif" alt="mono bailon">
+		<img class="reno" src="./Reno.gif" alt="reno navidad">
+	</div>
+
+	<div class="fila2">
+		<img class="carlton" src="./Carlton.gif" alt="carlton">
+		<img class="FelizNavidad" src="./navidad.gif" alt="Cartel navidad">
+		<img class="carlton" src="./Carlton.gif" alt="carlton">
+	</div>
+	<div class="fila3">
+		<img class="borracho" src="./borracho.gif" alt="Borrachillo">
+		<img class="muneco" src="./Muneco.gif" alt="Muneco">
+	</div>
+
+	<audio src="./Ya llego la Navidad.mp3" autoplay controls>
+	</audio>
+
+
+
+</body>
+
+</html>
